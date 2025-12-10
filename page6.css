@@ -1,0 +1,49 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Quicksand', sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background:url('background.jpg') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+
+/* pink overlay */
+.bg-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(255,192,203,0.35);
+  backdrop-filter:blur(4px);
+}
+
+/* glass frame */
+.text-frame{
+  position:relative;
+  max-width:700px;
+  padding:50px;
+  background:rgba(255,255,255,0.35);
+  backdrop-filter:blur(20px);
+  border-radius:35px;
+  box-shadow:0 30px 60px rgba(255,105,180,0.35);
+  text-align:center;
+  z-index:2;
+}
+
+/* message */
+.message{
+  font-size:20px;
+  color:#5a2a3c;
+  line-height:1.9;
+}
+
+.message::first-line{
+  font-family:'Great Vibes', cursive;
+  font-size:36px;
+  color:#e75480;
+}

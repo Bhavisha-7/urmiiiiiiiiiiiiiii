@@ -1,0 +1,85 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Quicksand', sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background:linear-gradient(135deg,#ffe6f0,#ffd9ec);
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.music-container{
+  background:rgba(255,255,255,0.45);
+  backdrop-filter:blur(12px);
+  padding:40px;
+  border-radius:25px;
+  text-align:center;
+  box-shadow:0 20px 40px rgba(255,105,180,0.25);
+  z-index:2;
+}
+
+.music-container h1{
+  font-family:'Pacifico', cursive;
+  color:#e75480;
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.sub-text{
+  color:#555;
+  margin-bottom:25px;
+}
+
+.song-buttons button{
+  display:block;
+  width:220px;
+  margin:12px auto;
+  padding:12px;
+  border:none;
+  border-radius:25px;
+  background:linear-gradient(135deg,#ff8fb1,#ffb6d5);
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.song-buttons button:hover{
+  transform:scale(1.05);
+  box-shadow:0 8px 20px rgba(255,105,180,0.4);
+}
+
+.note{
+  margin-top:20px;
+  color:#666;
+  font-size:14px;
+}
+
+/* Audio player */
+audio{
+  margin-top:20px;
+  width:100%;
+}
+
+/* Tiny hearts */
+.tiny-hearts-bg div{
+  position:absolute;
+  width:8px;
+  height:8px;
+  background:linear-gradient(145deg,#ff7fa8,#ffb3d1);
+  border-radius:50%;
+  animation:floatTiny 10s linear infinite;
+  opacity:0.8;
+}
+
+@keyframes floatTiny{
+  0%{ transform:translateY(100vh) scale(0.5); opacity:0;}
+  10%{opacity:1;}
+  100%{ transform:translateY(-10vh) scale(1); opacity:0;}
+}
